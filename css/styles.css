@@ -1,5 +1,6 @@
 body{
     font-family: Roboto;
+
 }
 .list{
     list-style: none;
@@ -54,6 +55,7 @@ img{
     padding-top: 24px;
     padding-bottom: 25px;
     border-bottom: 1px solid #ECECEC;
+    background-color:#FFFFFF ;
 }
 .header > .container{
     display: flex;
@@ -99,12 +101,23 @@ img{
 .header-phone:focus{
     color:var(--accent-color);
 }
+.header-icon{
+    fill: currentColor;
+    margin-right: 10px;
+}
+.header-mail,
+.header-phone{
+    display: flex;
+    align-items: center;
+}
 
 
 /***************** hero*****************/
 .hero{
-    background-color: #2F303A;
-    background-image: url(../images/hero-back.jpg);
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: #C4C4C4;;
+    background-image:  linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-back.png) ;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -178,16 +191,23 @@ img{
         clip: rect(0 0 0 0);
         overflow: hidden;
 }
-
-.about-icon{
-    width: 270px;
-    height: 120px;
-    background-color: #F5F4FA;
-    display: block;
-    border-radius: 4px;
-    margin-bottom: 30px;
+.about-icon-list{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-bottom: 30px;
 }
-
+.about-icon-item{
+    width: 270px;
+        height: 120px;
+        left: 215px;
+        top: 774px;
+        background: #F5F4FA;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
 
 .about-item-title {
 font-weight: 700;
@@ -233,6 +253,7 @@ font-weight: 700;
 .team{
     padding-top: 94px;
     padding-bottom: 94px;
+    background-color: #F5F4FA;
 }
 .team-list{
     display: flex;
@@ -285,9 +306,20 @@ margin-bottom: 16px;
     height: 44px;
     border-radius: 50%;
     display: block;
-    background-color: blue;
+    background-color: #FFFFFF;
     margin-bottom: 30px;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #AFB1B8;
+}
+.team-soc-icon{
+    fill: currentColor;
+}
+.team-soc-link:hover,
+.team-soc-link:focus{
+    background-color: #2196F3;
+    color: #FFFFFF;
 }
 /*****************clients*****************/
 .clients{
@@ -314,7 +346,20 @@ margin-bottom: 16px;
     display: block;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #AFB1B8;
 }
+.clients-icon{
+    fill:currentColor;
+}
+.clients-link:hover,
+.clients-link:focus{
+    border:1px solid#2196F3;
+    color:#2196F3;
+}
+
 /*****************footer*****************/
 .footer{
     background-color: #2F303A;
@@ -377,6 +422,18 @@ margin-bottom: 16px;
     background-color:  rgba(255, 255, 255, 0.1);
     display: block;
     border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+}
+.footer-soc-icon{
+    fill: currentColor;
+}
+.footer-soc-link:hover,
+.footer-soc-link:focus{
+    background-color: #2196F3;
+    color: #FFFFFF;
 }
 /*****************gallery*****************/
 .gallery{
