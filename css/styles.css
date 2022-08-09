@@ -286,6 +286,7 @@ font-weight: 700;
 }
 .team-info{
     padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .team-text{
@@ -307,7 +308,6 @@ margin-bottom: 16px;
     border-radius: 50%;
     display: block;
     background-color: #FFFFFF;
-    margin-bottom: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -510,4 +510,9 @@ background-color: #2196F3;
 }
 .gallery-product-item:nth-last-child(-n+1){
     margin-bottom: 0px;
+}
+.gallery-product-item:hover,
+.gallery-product-item:focus
+{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
